@@ -7,18 +7,40 @@
   <title>Document</title>
   <style>
     /* 전체 선택자 */
+    *{
+      color: red;
+    }
 
     /* 요소 선택자 */
+    h2 {
+      color: orange;
+    }
+
+    h3,
+    h4 {
+      color: blue;
+    }
 
     /* class 선택자 */
-
+    .green {
+      color: green;
+    }
     /* id 선택자 */
+    #purple {
+      color: purple;
+    }
 
     /* 자식 결합자 */
+    .green > span {
+      font-size: 50px;
+    }
 
     /* 자손 결합자 */
+    .green li {
+      color: brown;
+    }
 
-    /* 속성 선택자 */
+    /* 속성 선택자 (참고) */
     [class^="y"] {
       color: yellow;
     }
@@ -30,7 +52,7 @@
   <h2>선택자</h2>
   <h3>연습</h3>
   <h4>반가워요</h4>
-  <p id="purple">과목 목록</p>
+  <p id="purple">과목 목록</p>   <!-- 문서에는 주어진 아이디를 가진 요소가 하나만 있어야 함-->
   <ul class="green">
     <li>파이썬</li>
     <li>알고리즘</li>
